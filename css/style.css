@@ -1,68 +1,76 @@
-  body {
-    padding: 0;
-    margin: 0;
-    background-image: url(../img/pink\ dust.png);
+body
+{
     font-family: sans-serif;
-  }
-h2{
-  padding: 0;
-  margin: 0;
-  text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/pink\ dust.png);
 }
-p{
-  text-align: center;
+h2
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
-  .container {
-    overflow: hidden;
-    padding: 5px;
+p
+{
+    text-align: center;
+}
+.container
+{
     position: relative;
     left: 50%;
-    transform: translateX(-20%);
+    overflow: hidden;
     margin-top: 8px;
-  }
+    padding: 5px;
+    transform: translateX(-20%);
+}
 
-  .container:before {
-    content: '';
-    width: 8px;
-    height: 100%;
-    background-color: black;
+.container:before
+{
     position: absolute;
     left: 20px;
-  }
-
-  .content {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px 60px;
-    width: 500px;
-    border-radius: 8px;
-    position: relative;
-  }
-
-  .content:before {
+    width: 8px;
+    height: 100%;
     content: '';
+    background-color: black;
+}
+
+.content
+{
+    position: relative;
+    width: 500px;
+    margin: 20px 60px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.content:before
+{
+    position: absolute;
+    top: 50%;
+    left: -10px;
     width: 20px;
     height: 20px;
-    background-color: #fff;
-    position: absolute;
-    left: -10px;
-    top: 50%;
-    -webkit-transform: translate(-50%) rotate(45deg);
-    -ms-transform: translate(-50%) rotate(45deg);
-    transform: translate(-50%) rotate(45deg);
-  }
-
-  .content:after {
     content: '';
+    -webkit-transform: translate(-50%) rotate(45deg);
+        -ms-transform: translate(-50%) rotate(45deg);
+            transform: translate(-50%) rotate(45deg);
+    background-color: #fff;
+}
+
+.content:after
+{
+    position: absolute;
+    top: 43%;
+    left: -41px;
     width: 30px;
     height: 30px;
-    border: 4px solid black;
-    background-color: #7B4D52;
-    border-radius: 50%;
-    position: absolute;
-    left: -41px;
-    top: 43%;
+    content: '';
     -webkit-transform: translate(-50%);
-    -ms-transform: translate(-50%);
-    transform: translate(-50%);
-  }
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
+    border: 4px solid black;
+    border-radius: 50%;
+    background-color: #7b4d52;
+}
